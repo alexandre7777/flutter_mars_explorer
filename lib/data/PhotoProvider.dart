@@ -1,12 +1,16 @@
 import 'package:flutter/cupertino.dart';
+import 'package:marsroverflutter/domain/model/RoverPhotoConvertor.dart';
 import 'package:marsroverflutter/domain/model/RoverPhotoUiModel.dart';
 import 'package:marsroverflutter/service/mars_rover_photo_service.dart';
 import 'package:marsroverflutter/service/model/RoverPhotoRemoteModel.dart';
+import 'package:marsroverflutter/db/mars_rover_saved_local_dao.dart';
 
 class PhotoProvider with ChangeNotifier {
   final PhotoService _photoService;
 
-  PhotoProvider(this._photoService);
+  final PhotoDao _photoDao;
+
+  PhotoProvider(this._photoService, this._photoDao);
 
   RoverPhotoUiState _roverPhotoUiState = Loading();
 
@@ -18,9 +22,10 @@ class PhotoProvider with ChangeNotifier {
   }
 
   Future getMarsRoverPhoto(String roverName, String sol) async {
-    Future.delayed(Duration.zero,(){
+    Future.delayed(Duration.zero, () {
       roverPhotoUiState = Loading();
     });
+    List<int> allSavedIds = await _photoDao.allSavedIds(sol, roverName);
     RoverPhotoRemoteModel result =
         await _photoService.fetchPhoto(roverName, sol);
     roverPhotoUiState = Success(result.photos
@@ -31,7 +36,11 @@ class PhotoProvider with ChangeNotifier {
             photo.sol.toString(),
             photo.earthDate,
             photo.camera.fullName,
-            false))
+            allSavedIds.contains(photo.id)))
         .toList());
+  }
+
+  Future insertRoverPhoto(RoverPhotoUiModel roverPhotoUiModel) async {
+    _photoDao.insert(toDbModel(roverPhotoUiModel));
   }
 }

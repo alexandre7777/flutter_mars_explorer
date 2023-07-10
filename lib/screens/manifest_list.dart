@@ -6,6 +6,8 @@ import 'package:marsroverflutter/screens/photo_list.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import 'mars_rover_bottom_navigation_bar.dart';
+
 class ManifestList extends StatefulWidget {
   static const routeName = 'manifest';
   static const fullPath = '/$routeName';
@@ -53,6 +55,7 @@ class _ManifestListState extends State<ManifestList> {
                 Loading() => const CircularProgressIndicator(),
                 Error() => const CircularProgressIndicator(),
               }),
+      bottomNavigationBar: marsRoverBottomNavigationBar(context),
     );
   }
 }

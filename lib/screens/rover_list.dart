@@ -4,6 +4,8 @@ import 'package:marsroverflutter/domain/model/RoverUiModel.dart';
 import 'package:marsroverflutter/domain/model/RoverUiModelCreator.dart';
 import 'package:marsroverflutter/screens/manifest_list.dart';
 
+import 'mars_rover_bottom_navigation_bar.dart';
+
 class RoverList extends StatefulWidget {
   static const routeName = '/';
 
@@ -30,6 +32,7 @@ class _RoverListState extends State<RoverList> {
         padding: const EdgeInsets.symmetric(vertical: 16),
         itemBuilder: (context, index) => Rover(roverUiModelList[index]),
       ),
+      bottomNavigationBar: marsRoverBottomNavigationBar(context),
     );
   }
 }
