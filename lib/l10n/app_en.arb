@@ -1,5 +1,7 @@
 {
   "sol": "Sol: {sol}",
   "earthDate": "Earth date: {earthDate}",
-  "numberPhoto": "Number of photo: {numberPhoto}"
+  "numberPhoto": "Number of photo: {numberPhoto}",
+  "error": "Error",
+  "loading": "Loading"
 }

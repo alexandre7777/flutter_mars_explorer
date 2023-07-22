@@ -41,6 +41,23 @@ class PhotoProvider with ChangeNotifier {
   }
 
   Future insertRoverPhoto(RoverPhotoUiModel roverPhotoUiModel) async {
-    _photoDao.insert(toDbModel(roverPhotoUiModel));
+    if (roverPhotoUiModel.isSaved) {
+      _photoDao.remove(toDbModel(roverPhotoUiModel));
+    } else {
+      _photoDao.insert(toDbModel(roverPhotoUiModel));
+    }
+    roverPhotoUiState = Success((roverPhotoUiState as Success)
+        .roverPhotoUiModelList
+        .map((photo) => RoverPhotoUiModel(
+        photo.id,
+        photo.roverName,
+        photo.imgSrc,
+        photo.sol.toString(),
+        photo.earthDate,
+        photo.cameraFullName,
+        roverPhotoUiModel.id == photo.id
+            ? !photo.isSaved
+            : photo.isSaved))
+        .toList());
   }
 }

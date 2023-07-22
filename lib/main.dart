@@ -3,6 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marsroverflutter/data/ManifestProvider.dart';
 import 'package:marsroverflutter/data/PhotoProvider.dart';
+import 'package:marsroverflutter/data/SavedPhotoProvider.dart';
 import 'package:marsroverflutter/db/mars_rover_saved_local_dao.dart';
 import 'package:marsroverflutter/screens/photo_list.dart';
 import 'package:marsroverflutter/screens/rover_list.dart';
@@ -40,7 +41,9 @@ void main() async {
     ChangeNotifierProvider(
         create: (context) => ManifestProvider(ManifestService())),
     ChangeNotifierProvider(
-        create: (context) => PhotoProvider(PhotoService(), PhotoDao(database)))
+        create: (context) => PhotoProvider(PhotoService(), PhotoDao(database))),
+    ChangeNotifierProvider(
+        create: (context) => SavedPhotoProvider(PhotoDao(database)))
   ], child: const MarsRoverExplorer()));
 }
 
@@ -74,7 +77,7 @@ GoRouter router() {
               path: 'saved',
               name: 'saved',
               builder: (context, state) {
-                return const SavedList(title: "Mars Rover Explorer");
+                return SavedList(title: "Mars Rover Explorer");
               })
         ],
       ),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marsroverflutter/data/ManifestProvider.dart';
 import 'package:marsroverflutter/domain/model/RoverManifestUiModel.dart';
+import 'package:marsroverflutter/screens/error_screen.dart';
+import 'package:marsroverflutter/screens/loading_screen.dart';
 import 'package:marsroverflutter/screens/photo_list.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -52,8 +54,8 @@ class _ManifestListState extends State<ManifestList> {
                         (manifestState.roverManifestUiState as Success)
                             .roverManifestUiModelList[index],
                         widget.roverName)),
-                Loading() => const CircularProgressIndicator(),
-                Error() => const CircularProgressIndicator(),
+                Loading() => const LoadingScreen(),
+                Error() => const ErrorScreen(),
               }),
       bottomNavigationBar: marsRoverBottomNavigationBar(context),
     );
