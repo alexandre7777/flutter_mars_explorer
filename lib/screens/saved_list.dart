@@ -4,7 +4,6 @@ import 'package:marsroverflutter/domain/model/RoverPhotoUiModel.dart';
 import 'package:marsroverflutter/screens/photo.dart';
 import 'package:provider/provider.dart';
 
-import '../data/PhotoProvider.dart';
 import 'mars_rover_bottom_navigation_bar.dart';
 
 class SavedList extends StatefulWidget {

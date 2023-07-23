@@ -15,5 +15,6 @@ marsRoverBottomNavigationBar(BuildContext context) {
       ],
       onTap: (int index) => {
             if (index == 0) {context.go('/')} else {context.go('/saved')}
-          });
+          },
+      currentIndex: ModalRoute.of(context)?.settings.name == 'saved' ? 1 : 0);
 }

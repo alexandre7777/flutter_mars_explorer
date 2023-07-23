@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marsroverflutter/data/PhotoProvider.dart';
 import 'package:marsroverflutter/domain/model/RoverPhotoUiModel.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'mars_rover_bottom_navigation_bar.dart';
