@@ -1,4 +1,4 @@
-import 'package:marsroverflutter/service/model/PhotoRemoteModel.dart';
+import 'package:marsroverflutter/service/model/photo_remote_model.dart';
 
 class RoverPhotoRemoteModel {
   final List<PhotoRemoteModel> photos;

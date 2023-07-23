@@ -1,5 +1,5 @@
-import 'package:marsroverflutter/service/model/CameraRemoteModel.dart';
-import 'package:marsroverflutter/service/model/RoverRemoteModel.dart';
+import 'package:marsroverflutter/service/model/camera_remote_model.dart';
+import 'package:marsroverflutter/service/model/rover_remote_model.dart';
 
 class PhotoRemoteModel {
   final CameraRemoteModel camera;

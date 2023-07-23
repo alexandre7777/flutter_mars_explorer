@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:marsroverflutter/domain/model/RoverUiModel.dart';
-import 'package:marsroverflutter/domain/model/RoverUiModelCreator.dart';
+import 'package:marsroverflutter/domain/model/rover_ui_model.dart';
+import 'package:marsroverflutter/domain/model/rover_ui_model_creator.dart';
 import 'package:marsroverflutter/screens/manifest_list.dart';
 
 import 'mars_rover_bottom_navigation_bar.dart';

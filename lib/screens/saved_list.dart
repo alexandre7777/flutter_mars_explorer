@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:marsroverflutter/data/SavedPhotoProvider.dart';
-import 'package:marsroverflutter/domain/model/RoverPhotoUiModel.dart';
+import 'package:marsroverflutter/data/saved_photo_provider.dart';
+import 'package:marsroverflutter/domain/model/rover_photo_ui_model.dart';
 import 'package:marsroverflutter/screens/photo.dart';
 import 'package:provider/provider.dart';
 

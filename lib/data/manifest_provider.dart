@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:marsroverflutter/domain/model/RoverManifestConvertor.dart';
-import 'package:marsroverflutter/domain/model/RoverManifestUiModel.dart';
+import 'package:marsroverflutter/domain/model/rover_manifest_convertor.dart';
+import 'package:marsroverflutter/domain/model/rover_manifest_ui_model.dart';
 import 'package:marsroverflutter/service/mars_rover_manifest_service.dart';
-import 'package:marsroverflutter/service/model/RoverManifestRemoteModel.dart';
+import 'package:marsroverflutter/service/model/rover_manifest_remote_model.dart';
 
 class ManifestProvider with ChangeNotifier {
   final ManifestService _manifestService;

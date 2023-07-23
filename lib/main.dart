@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
-import 'package:marsroverflutter/data/ManifestProvider.dart';
-import 'package:marsroverflutter/data/PhotoProvider.dart';
-import 'package:marsroverflutter/data/SavedPhotoProvider.dart';
+import 'package:marsroverflutter/data/manifest_provider.dart';
+import 'package:marsroverflutter/data/photo_provider.dart';
+import 'package:marsroverflutter/data/saved_photo_provider.dart';
 import 'package:marsroverflutter/db/mars_rover_saved_local_dao.dart';
 import 'package:marsroverflutter/screens/photo_list.dart';
 import 'package:marsroverflutter/screens/rover_list.dart';

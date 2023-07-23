@@ -1,4 +1,4 @@
-import 'package:marsroverflutter/service/model/PhotoManifestRemoteModel.dart';
+import 'package:marsroverflutter/service/model/photo_manifest_remote_model.dart';
 
 class RoverManifestRemoteModel {
   final PhotoManifestRemoteModel photoManifest;

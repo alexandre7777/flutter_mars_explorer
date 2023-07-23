@@ -1,4 +1,4 @@
-import 'package:marsroverflutter/service/model/ManifestPhotoRemoteModel.dart';
+import 'package:marsroverflutter/service/model/manifest_photo_remote_model.dart';
 
 class PhotoManifestRemoteModel {
   final String landingDate;

@@ -1,6 +1,6 @@
 
 import 'package:marsroverflutter/db/mars_rover_saved_local_model.dart';
-import 'RoverPhotoUiModel.dart';
+import 'rover_photo_ui_model.dart';
 
 MarsRoverSavedLocalModel toDbModel(RoverPhotoUiModel roverPhotoUiModel) {
   return MarsRoverSavedLocalModel(

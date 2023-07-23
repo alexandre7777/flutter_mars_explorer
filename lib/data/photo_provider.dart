@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:marsroverflutter/domain/model/RoverPhotoConvertor.dart';
-import 'package:marsroverflutter/domain/model/RoverPhotoUiModel.dart';
+import 'package:marsroverflutter/domain/model/rover_photo_convertor.dart';
+import 'package:marsroverflutter/domain/model/rover_photo_ui_model.dart';
 import 'package:marsroverflutter/service/mars_rover_photo_service.dart';
-import 'package:marsroverflutter/service/model/RoverPhotoRemoteModel.dart';
+import 'package:marsroverflutter/service/model/rover_photo_remote_model.dart';
 import 'package:marsroverflutter/db/mars_rover_saved_local_dao.dart';
 
 class PhotoProvider with ChangeNotifier {

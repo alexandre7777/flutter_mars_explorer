@@ -1,5 +1,5 @@
-import 'package:marsroverflutter/domain/model/RoverManifestUiModel.dart';
-import 'package:marsroverflutter/service/model/RoverManifestRemoteModel.dart';
+import 'package:marsroverflutter/domain/model/rover_manifest_ui_model.dart';
+import 'package:marsroverflutter/service/model/rover_manifest_remote_model.dart';
 
 Success toUiModel(RoverManifestRemoteModel roverManifestRemoteModel) {
    final roverManifestUiModelList = roverManifestRemoteModel.photoManifest.photos

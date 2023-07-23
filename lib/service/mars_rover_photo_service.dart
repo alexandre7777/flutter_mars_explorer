@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:marsroverflutter/service/model/RoverPhotoRemoteModel.dart';
+import 'package:marsroverflutter/service/model/rover_photo_remote_model.dart';
 import 'package:http/http.dart' as http;
 
 class PhotoService {

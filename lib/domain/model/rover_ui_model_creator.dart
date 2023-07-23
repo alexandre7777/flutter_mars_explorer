@@ -1,4 +1,4 @@
-import 'package:marsroverflutter/domain/model/RoverUiModel.dart';
+import 'package:marsroverflutter/domain/model/rover_ui_model.dart';
 
 var roverUiModelList = <RoverUiModel>[
   RoverUiModel('Perseverance', 'images/perseverance.png', '18 February 2021', '12.56 km'),

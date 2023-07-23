@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:marsroverflutter/domain/model/RoverManifestUiModel.dart';
+import 'package:marsroverflutter/domain/model/rover_manifest_ui_model.dart';
 import 'package:marsroverflutter/service/mars_rover_manifest_service.dart';
-import 'package:marsroverflutter/service/model/RoverManifestRemoteModel.dart';
-import 'package:marsroverflutter/data/ManifestProvider.dart';
+import 'package:marsroverflutter/service/model/rover_manifest_remote_model.dart';
+import 'package:marsroverflutter/data/manifest_provider.dart';
 import 'package:mocktail/mocktail.dart';
 
 class MockManifestService extends Mock implements ManifestService {}

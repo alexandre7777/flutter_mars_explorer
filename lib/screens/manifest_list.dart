@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:marsroverflutter/data/ManifestProvider.dart';
-import 'package:marsroverflutter/domain/model/RoverManifestUiModel.dart';
+import 'package:marsroverflutter/data/manifest_provider.dart';
+import 'package:marsroverflutter/domain/model/rover_manifest_ui_model.dart';
 import 'package:marsroverflutter/screens/error_screen.dart';
 import 'package:marsroverflutter/screens/loading_screen.dart';
 import 'package:marsroverflutter/screens/photo_list.dart';

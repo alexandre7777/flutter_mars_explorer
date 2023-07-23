@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:marsroverflutter/service/model/RoverManifestRemoteModel.dart';
+import 'package:marsroverflutter/service/model/rover_manifest_remote_model.dart';
 import 'package:http/http.dart' as http;
 
 class ManifestService {
